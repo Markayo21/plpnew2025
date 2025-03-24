@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+
+    <!--2.internal styling/css-->
+    <style>
+      h2 {
+       text-decoration: underline;
+       text-align: center;
+      }
+      #p-main {
+       color: white;
+       font-size: 40px;
+       font-style: italic;
+ 
+     
+      }
+      img{
+       display: block;
+ 
+       border: 5px solid white;
+       border-radius: 5px;
+       margin: 200px;
+       padding: 50px;
+      }
+      .google-link {
+       color: yellowgreen;
+       text-decoration: none;
+       cursor: pointer;
+ 
+      }
+ 
+      
+ 
+      
+    </style>
+
+</head>   
+<!-- 1.in line-styling-->
+<body style="background-color: bisque;">
+  <p id="p-main">
+    This is document highlighting images and lists
+   <!--<ol>	Defines an ordered list-->
+  <h2>Ordered List</h2>
+       
+
+        <ol type="I" start="1"> 
+          <li>Kenya</li>
+          <li>Uganda</li>
+          <li>Tanzania</li>
+
+        </ol>
+
+         <!-- External Image -->
+
+        <h3>External images</h3>
+        <img src="https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="A wonderful view of the landscape" height="300" width="250">
+
+        <a href=" https://google.com">Visit our Page</a>
+
+  </p>
+
+
+
+
+
+         <!-- Contacts Table -->
+        <h2>Html Tables</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Address</th>
+              <th>Mobile</th>
+              <th>email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mark</td>
+              <td> 7 Kiambu</td>
+              <td>+254727247576</td>
+              <td>wainainamark59@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Sammy</td>
+              <td>50 Sesame Street</td>
+              <td>0720856778</td>
+              <td>sammyz@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Sandra</td>
+              <td>2 Sunrise Avenue</td>
+              <td>0712345466</td>
+              <td>Sandywin@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Brian</td>
+              <td>3 kwame Road</td>
+              <td>+256734654821</td>
+              <td>Brianmafom@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Joseph</td>
+              <td>23 Real Drive</td>
+              <td>0724567431</td>
+              <td>jraph@gmail.com</td>
+            </tr>
+            
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Name</th>
+              <th>Address</th>
+              <th>mobile</th>
+              <th>email</th>
+
+            </tr>
+          
+          </tfoot>
+        
+        </table>
+
+         <!-- Registration Form -->
+
+
+        <h2>Registration Form</h2>
+        <form action="#" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6">
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <!-- Dropdown -->
+
+
+        <label for="country">Country</label>
+          <select name="country" id="country">
+             <option>--Select Country--</option>
+             <option value="South Africa">South Africa</option>
+             <option value="Botswana">Botswana</option>
+             <option value="Ghana">Ghana</option>
+             <option value="Congo">Congo</option>
+          </select>
+          <br><br>
+
+          <!-- Radio Buttons -->
+
+          <label for="gender">Gender:</label>
+          <input type="radio" name="gender" value="female"> Female
+          <input type="radio" name="gender" value="male"> Male
+          <br><br>
+
+           <!-- Checkboxes -->
+
+          <label for="hobby">Hobbies</label>
+          <input type="checkbox" name="hobby" value="travel">Travel
+          <input type="checkbox" name="hobby" value="music">Music
+          <input type="checkbox" name="hobby" value="reading">Reading
+          <input type="checkbox" name="hobby" value="swimming">Swimming
+          <br><br>
+
+          <button type="submit">Register</button>
+        </form>
+
+            <!-- Multimedia Elements -->
+    <h2>Audio Element</h2>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>Video Element</h2>
+    <video controls width="500">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+    
+</body>
+</html>
